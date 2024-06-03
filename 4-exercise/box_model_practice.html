@@ -1,0 +1,105 @@
+<style>
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: padding-top 1s, padding-bottom 1s, padding-left 1s,
+      padding-right 1s;
+  }
+
+  .stretch-button:hover {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+  }
+
+  .pad-margin-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: padding 0.15s, margin 0.15s;
+  }
+
+  .pad-margin-button:hover {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .button-3d {
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .button-3d:active {
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+  }
+
+  .edge-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .edge-button:active {
+    background-color: yellow;
+    color: green;
+  }
+
+  .search-result {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 18px;
+  }
+</style>
+
+<h3>1. Stretch Button</h3>
+<button class="stretch-button">Stretch</button>
+
+<h3>2. Margin and Padding Together</h3>
+<button class="pad-margin-button">One</button>
+<button class="pad-margin-button">Two</button>
+<button class="pad-margin-button">Three</button>
+
+<h3>3. 3D Click</h3>
+<button class="button-3d">One</button>
+
+<h3>4. Pagination</h3>
+
+<button class="edge-button">Back</button>
+<a class="search-result" href="https://google.com">1</a>
+<a class="search-result" href="https://google.com">2</a>
+<a class="search-result" href="https://google.com">3</a>
+<a class="search-result" href="https://google.com">4</a>
+<a class="search-result" href="https://google.com">5</a>
+<button class="edge-button">Next</button>
