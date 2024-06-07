@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <title>12f</title>
+  <style>
+    div {
+      font-family: arial;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 50px;
+      background-color: rgb(182, 31, 182);
+      padding-right: 15px;
+      padding-left: 15px;
+      align-items: center;
+    }
+
+    .left {
+      color: white;
+      font-weight: bold;
+    }
+
+    .middle {
+      background-color: white;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      margin-left: 100px;
+      margin-right: 80px;
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .right {
+      background-color: transparent;
+      border-style: solid;
+      color: white;
+      border-width: 1px;
+      border-color: white;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  </style>
+
+  <body>
+    <div class="header">
+      <div class="left">Home</div>
+      <input class="middle" type="text" placeholder="Search" />
+      <button class="right">Download</button>
+    </div>
+  </body>
+</html>
