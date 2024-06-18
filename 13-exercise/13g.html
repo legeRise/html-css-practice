@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>13g</title>
+    <style>
+      body {
+        font-family: arial;
+      }
+      .flexbox-1 {
+        display: flex;
+        width: 450px;
+        align-items: start;
+      }
+
+      .profile-pic {
+        height: 45px;
+        border-radius: 30px;
+        margin-right: 10px;
+      }
+
+      .flexbox-2 {
+        display: flex;
+        margin-bottom: 5px;
+      }
+
+      .name {
+        font-weight: bold;
+        margin-right: 8px;
+      }
+
+      .handle {
+        color: gray;
+        font-weight: 500;
+      }
+
+      .desc {
+        margin-bottom: 10px;
+      }
+      .flexbox-3 {
+        display: flex;
+        border: 1.5px solid rgb(209, 207, 207);
+        border-radius: 15px;
+        width: 350px;
+        overflow: hidden;
+      }
+
+      .video-preview {
+        height: 100px;
+        width: 130px;
+        background-color: rgb(209, 207, 207);
+        margin-right: 10px;
+      }
+
+      .platform-name {
+        color: gray;
+        margin-top: 15px;
+      }
+
+      .video-title {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flexbox-1">
+      <img class="profile-pic" src="../input.jpg" />
+      <div class="container">
+        <div class="flexbox-2">
+          <div class="name">supersimple.dev</div>
+          <div class="handle">@SuperSimpleDev</div>
+        </div>
+        <div class="desc">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="flexbox-3">
+          <div class="video-preview"></div>
+          <div class="info">
+            <div class="platform-name">youtube.com</div>
+            <div class="video-title">
+              Backend web development - a complete overview (2021)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

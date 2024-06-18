@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>14f</title>
+    <style>
+      body {
+        height: 3000px;
+        font-family: arial;
+      }
+      .sidebar-1 {
+        position: fixed;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        width: 90px;
+        padding-left: 15px;
+        padding-right: 10px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      .profile-pic {
+        height: 70px;
+        border-radius: 50px;
+        margin-top: 10px;
+      }
+
+      .sidebar-2 {
+        position: fixed;
+        background-color: rgb(55, 55, 55);
+        color: white;
+        width: 250px;
+        top: 0;
+        bottom: 0;
+        left: 100px;
+        padding-top: 20px;
+        line-height: 40px;
+        padding-left: 20px;
+      }
+
+      .flexbox {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+      }
+
+      .label {
+        font-weight: 600;
+      }
+      .add-icon {
+        font-size: 30px;
+        color: gray;
+      }
+
+      .hashtag {
+        font-size: 18px;
+        color: gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sidebar-1">
+      <img class="profile-pic" src="../input.jpg" />
+      <img class="profile-pic" src="../channel-images/channel-1.jpeg" />
+      <img class="profile-pic" src="../channel-images/channel-2.jpeg" />
+    </div>
+
+    <div class="sidebar-2">
+      <div class="flexbox">
+        <div class="label">INFO</div>
+        <div class="add-icon">&plus;</div>
+      </div>
+
+      <div class="hashtag"># new-updates</div>
+      <div class="hashtag"># updates</div>
+      <div class="hashtag"># faq</div>
+    </div>
+  </body>
+</html>
