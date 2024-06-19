@@ -1,25 +1,29 @@
 .header {
+  background-color: white;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
-
-  display: flex;
   justify-content: space-between;
   height: 60px;
   align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: lightgray;
+
+  z-index: 100;
 }
 
 .left-section {
-  align-items: center;
   display: flex;
+  align-items: center;
 }
 
 .hamburger-icon {
   height: 30px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 22px;
+  margin-right: 20px;
 }
 .yt-logo-icon {
   height: 24px;
@@ -29,7 +33,7 @@
   flex: 1;
   margin-left: 70px;
   margin-right: 35px;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   align-items: center;
 }
@@ -55,6 +59,42 @@
   border-width: 1px;
   border-style: solid;
 }
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.yt-apps-icon-container,
+.notification-container {
+  position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.yt-apps-icon-container .tooltip,
+.notification-container .tooltip {
+  color: white;
+  background-color: black;
+  position: absolute;
+  font-family: arial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  bottom: -50px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.yt-apps-icon-container:hover .tooltip,
+.notification-container:hover .tooltip {
+  opacity: 1;
+}
 .voice-search-button {
   height: 40px;
   width: 40px;
@@ -71,6 +111,7 @@
   margin-right: 20px;
   width: 200px;
   flex-shrink: 0;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -82,11 +123,25 @@
   height: 28px;
 }
 
+.notification-container {
+  position: relative;
+}
 .notification-icon {
   height: 28px;
 }
+.notification-count {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  background-color: rgb(201, 5, 5);
+  color: white;
+  border-radius: 10px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 13px;
+}
 
 .channel-icon {
-  height: 28px;
-  border-radius: 20px;
+  height: 34px;
+  border-radius: 30px;
 }
